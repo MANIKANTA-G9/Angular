@@ -1,0 +1,28 @@
+
+<h1>data binding</h1>
+<h2>String interpolation</h2>
+<p>{{username}}</p>
+<p>{{obj.name}}</p>
+
+<div [innerText]="text" [className]="backgroundColor"></div>
+<label>onClick</label>
+<button (click)="onClick()">Clear</button><br>
+
+<label>keyup</label>
+<input (keyup)="onKeyUp($event)"/>
+<br>
+<label>change</label>
+<input (change)="onChange()"/>
+<br>
+<label>input</label>
+<input (input)="onInput($event)"/>
+
+<h2>two way data binding</h2>
+<label>Firstname: </label>
+<input [(ngModel)]="firstname"/>
+<br>
+<label>Firstname: </label>
+<input [(ngModel)]="firstname"/>
+
+
+
